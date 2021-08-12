@@ -1,0 +1,16 @@
+.card {
+    border: 1px solid white;
+    margin: 25px auto;
+    border-radius: 40px;
+    width: 70%;
+}
+
+.card:hover {
+    border: 1px solid rgb(192, 6, 6);
+    color: rgb(192, 6, 6);
+}
+
+.card h2 {
+    font-weight: lighter;
+    text-align: center;
+}

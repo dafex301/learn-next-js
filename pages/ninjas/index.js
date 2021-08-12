@@ -1,8 +1,16 @@
+import Head from 'next/head';
+
 const Ninjas = () => {
     return (  
-        <div className="container">
-            <h1 className="title">Ninjas Page</h1>
-        </div>
+        <>
+            <Head>
+            <title>Ninja List | Page</title>
+            <meta name="Ninja List" content="Homepage" />
+            </Head>
+            <div className="container">
+                <h1 className="title">Ninjas Page</h1>
+            </div>
+        </>
     );
 }
  

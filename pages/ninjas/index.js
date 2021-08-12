@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Head from 'next/head';
 import styles from '../../styles/Ninjas.module.css'
 
@@ -20,9 +21,12 @@ const Ninjas = ({ninjas}) => {
             <div className="container">
                 <h1 className="title">Ninjas Page</h1>
                 {ninjas.map((ninja) => (
-                    <div key={ninja.id} className={styles.card}>
-                        <h2 className={styles.cardname}>{ninja.name}</h2>
-                    </div>
+                    // eslint-disable-next-line @next/next/link-passhref
+                    <Link href={'/ninjas/' + ninja.id} key={ninja.id}>
+                        <div className={styles.card}>
+                            <h2 className={styles.cardname}>{ninja.name}</h2>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </>

@@ -1,9 +1,7 @@
-import Navbar from "../../components/Navbar";
-
 const Ninjas = () => {
     return (  
-        <div>
-            <h1>Ninjas Page</h1>
+        <div className="container">
+            <h1 className="title">Ninjas Page</h1>
         </div>
     );
 }

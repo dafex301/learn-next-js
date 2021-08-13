@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -14,9 +14,11 @@ export default function Home() {
             <h1 className={styles.ninja}>Ninja</h1>
             <h1 className={styles.list}>List</h1>
           </div>
-            <hr className={styles.line} />
+            <hr className={styles.line}/>
           <div className={styles.click}>
-            <Link href="/ninjas"><a>see full <br></br> list here</a></Link>
+            <Link href="/ninjas">
+              <a>see full <br></br> list here</a>
+            </Link>
           </div>
         </div>
       </div>

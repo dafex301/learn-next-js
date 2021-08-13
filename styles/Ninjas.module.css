@@ -8,6 +8,7 @@
 .card:hover {
     border: 1px solid rgb(209,29,64);
     color: rgb(209,29,64);
+    cursor: pointer;
 }
 
 .card h2 {

@@ -1,4 +1,4 @@
-import Link from "next/dist/client/link";
+import Link from "next/link"
 import Head from "next/head";
 import { useRouter } from "next/dist/client/router";
 import { useEffect } from "react";
@@ -13,12 +13,18 @@ const NotFound = () => {
         setTimeout(() => {
             router.push('/');
         }, 8000);
-    }, []);
+    }, [router]);
 
     useEffect(() => {
+        let isMounted = true;
+
         setTimeout(() => {
-            setCounter(counter-1);
+            if(isMounted) {
+                setCounter(counter-1);
+            }
         }, 1000)
+
+        return () => {isMounted = false};
     }, [counter])
 
 

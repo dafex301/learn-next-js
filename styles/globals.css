@@ -75,3 +75,18 @@ footer {
   cursor: pointer;
 }
 
+.ninja-card {
+  max-width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.ninja-name {
+  font-weight: lighter;
+  margin-top: -20px;
+}
+

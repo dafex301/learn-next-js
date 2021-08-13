@@ -21,10 +21,9 @@ const Ninjas = ({ninjas}) => {
             <div className="container">
                 <h1 className="title">Ninjas Page</h1>
                 {ninjas.map((ninja) => (
-                    // eslint-disable-next-line @next/next/link-passhref
                     <Link href={'/ninjas/' + ninja.id} key={ninja.id}>
                         <div className={styles.card}>
-                            <h2 className={styles.cardname}>{ninja.name}</h2>
+                            <h2 className={styles.cardname}>{ninja.username}</h2>
                         </div>
                     </Link>
                 ))}

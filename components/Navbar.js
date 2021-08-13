@@ -6,7 +6,9 @@ const Navbar = () => {
         <nav>
             <div className="logo">
                 <Link href="/">
-                    <Image src="/logo.png" width="116,46" height="70,4" alt="logo"></Image>
+                    <div>
+                        <Image src="/logo.png" width="116,46" height="70,4" alt="logo"></Image>
+                    </div>
                 </Link>
             </div>
             <div className="links">
